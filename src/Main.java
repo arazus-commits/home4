@@ -4,29 +4,29 @@ public class Main {
         //задача 1
         int age = 17;
         if (age >= 18) {
-            System.out.println("Если возраст человека равне " + age + ", то он совершеннолетний.");
-        }
-        if (age < 18) {
-            System.out.println("Если возраст человека равне " + age + ", он не достиг совершеннолетия, нужно немного подождать.");
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ", он не достиг совершеннолетия, нужно немного подождать.");
         }
         //задача 2
         int temp = 10;
-        if (temp < 5) {
+        if (temp <= 5) {
             System.out.println("На улице " + temp + " градусов, нужно надеть шапку.");
-        }
-        if (temp > 5) {
+        } else {
             System.out.println("На улице " + temp + " градусов, можно идти без шапки.");
         }
         //задача 3
         int speed = 50;
-        if (speed > 60) {
-            System.out.println("Если скорость " + speed + ", то придется заплатить штраф.");
-        }
         if (speed <= 60) {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно.");
+        } else {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф.");
         }
         //задача 4
         int age2 = 10;
+        if (age2 < 2) {
+            System.out.println("Если возраст человека равен " + age2 + ", то ему пора спать.");
+        }
         if (age2 >= 2 && age2 <= 6) {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад.");
         }
@@ -41,28 +41,24 @@ public class Main {
         }
         //задача 5
         int age3 = 10;
-        boolean adult = false;
-        if (age3 < 5) {
+        if (age3 <= 5) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе.");
         }
-        if (age3 > 5 && age3 <= 14 && adult == true) {
+        if (age3 > 5 && age3 <= 14) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то можно кататься на аттракицоне в сопровождении.");
-        } else {
-            System.out.println("Если возраст ребенка равен " + age3 + " и нет взрослого, то нельзя кататься.");
         }
         if (age3 > 14) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то можно кататься без сопровождения.");
         }
         //задача 6
-        boolean clogged = false;
-        boolean sedentaryThereIs = true;
-
-        if (clogged == true) {
+        int sedentary = 59; //система сообщает колчиество занятых сидячих мест, max 60
+        int people = 100; //система сообщает количество людей вошедших в  вагон, max 102
+        if (people == 102) {
             System.out.println("В поезде нет мест");
-        } else if (sedentaryThereIs == true) {
+        } else if (sedentary == 60 && people < 102) {
+            System.out.println("В поезде есть только стоячие места");
+        } else  {
             System.out.println("В поезде есть сидячие места");
-        } else {
-            System.out.println("В поезде только стоячие места");
         }
         //задача 7
         int one = 541;

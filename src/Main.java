@@ -59,7 +59,7 @@ public class Main {
         } else  {
             System.out.println("В поезде есть сидячие места");
         }
-        //задача 7
+        //задача  7
         int one = 541;
         int two = 350;
         int three = 964;
